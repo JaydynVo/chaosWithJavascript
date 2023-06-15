@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaScripty Thing</title>
+    </head>
+
+
+    <body id = "body">
+        <h2  id = "Changey">
+            Hurting eyes with JavaScript
+        </h2>
+
+        <p id = "ChangeMe"> Click the buttons. Nothing will happen to your eyes, I swear! </p>
+
+        <button onclick ="changeColourBad()"> I want to hurt my eyes</button>
+
+        <button onclick ="changeColourGreen()"> I want to see normal things</button>
+
+        <button onclick ="changeColourBlue()"> I want to be blind</button>
+
+
+        <h2  id = "Changeys">
+            Generating Eggs wih JavaScript
+        </h2>
+
+        <p id = "ChangeMee">Click the button for free eggs</p>
+
+        <button onclick ="create_eggs()">Free Eggs</button>
+<br>
+<br>
+        <button onclick ="window.close()">TAKE ME OUT OF HERE</button>
+
+
+    </body>
+
+</html>
+
+<script>
+    function changeColourBad(){
+        document.getElementById("Changey").style.color = "#ff1a00";
+        document.getElementById("ChangeMe").style.color = "#ff1a00";
+        document.getElementById("Changeys").style.color = "#ff1a00";
+        document.getElementById("ChangeMee").style.color = "#ff1a00";
+        document.getElementById("body").style.backgroundColor = "#009b00";
+    }
+
+    function changeColourGreen(){
+        document.getElementById("ChangeMe").style.color = "black";
+        document.getElementById("Changey").style.color = "black";
+        document.getElementById("ChangeMee").style.color = "black";
+        document.getElementById("Changeys").style.color = "black";
+        document.getElementById("body").style.backgroundColor = "white";
+
+    }
+
+    function changeColourBlue(){
+        document.getElementById("ChangeMe").style.color = "black";
+        document.getElementById("Changey").style.color = "black";
+        document.getElementById("ChangeMee").style.color = "black";
+        document.getElementById("Changeys").style.color = "black";
+        document.getElementById("body").style.backgroundColor = "black";
+    }
+
+    function create_eggs(){
+        if (document.getElementById("ChangeMee").innerHTML == 'Egg Egg Egg Egg Egg') {
+            document.getElementById("ChangeMee").innerHTML = "Don't Be Greedy";
+        }
+        else if (document.getElementById("ChangeMee").innerHTML == 'Click the button for free eggs') {
+            document.getElementById("ChangeMee").innerHTML = "Egg Egg Egg Egg Egg";
+        
+        
+
+        }
+    }
+
+    prompt("Why do you want to access this website? (10 marks)")
+    alert("please wait here while I mark your response (pls dont press ok)")
+    alert("HEY")
+    var confirm = confirm("LET ME MARK YOUR RESPONSE")
+    if (confirm == true) {
+        alert ("thanks")
+        alert ("you failed lmao")
+    }
+
+    else {
+        alert("fine i'll kick you out of the website lmao")
+        window.close()
+    }
+
+
+    
+</script>
